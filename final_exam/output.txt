@@ -1,0 +1,6 @@
+Number 1 occurs 30%
+Number 2 occurs 20%
+Number 3 occurs 20%
+Number 8 occurs 10%
+Number 9 occurs 10%
+Number 10 occurs 10%
