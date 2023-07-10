@@ -12,6 +12,25 @@ void input_array(int *arr, int size)
     }
 }
 
+void input_array_until_press_enter(int *arr, int &size)
+{
+    size = 0;
+    int input;
+    while (cin >> input)
+    {
+        if (input != ' ')
+        {
+            size++;
+            arr[size] = input;
+        }
+
+        if (input == '\n')
+        {
+            break;
+        }
+    }
+}
+
 void print_array(int *arr, int size)
 {
     for (int i = 0; i < size; i++)
@@ -49,7 +68,8 @@ int main()
     int *arr = new int;
     int size = 10;
 
-    input_array(arr, size);
+    // input_array(arr, size);
+    input_array_until_press_enter(arr, size);
     print_array(arr, size);
     caculate_the_array(arr, size);
 
